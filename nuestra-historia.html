@@ -7,6 +7,29 @@
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .boda-img {
+            max-width:50%;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .historia-img {
+            max-width: auto;
+            height: auto;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .boda-img:hover, .historia-img:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
@@ -28,63 +51,56 @@
         </div>
     </nav>
 
-    <!-- Sección de Introducción con fondo y texto -->
-    <section class="container text-center my-5">
-        <h1 class="fw-bold text-primary">Nuestra Historia</h1>
-        <p class="lead">Nuestra historia ha sido un viaje lleno de amor, aprendizaje y momentos inolvidables.</p>
+    <section class="hero-section text-center">
+        <div class="container">
+            <h1 class="fw-bold">Nuestra Historia</h1>
+            <p class="lead">Un viaje de amor, crecimiento y momentos inolvidables.</p>
+        </div>
     </section>
 
-    <!-- Sección con Historia y Imágenes -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="assets/inicio.jpg" class="img-fluid historia-img shadow" alt="El Comienzo">
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-success fw-bold">El Comienzo</h3>
+                <p class="fs-5">Desde el primer mensaje hasta nuestra primera cita, cada instante estuvo lleno de magia. Recuerdo cómo nuestras charlas se alargaban hasta la madrugada y cómo una sonrisa podía cambiar mi día.</p>
+            </div>
+        </div>
+    </section>
+
     <section class="container my-5">
         <div class="row">
             <div class="col-md-6">
-                <h3 class="text-success fw-bold">El Comienzo</h3>
-                <p class="fs-5">Desde el primer encuentro, supe que nuestra historia sería única. Con cada paso juntos, nuestro amor ha crecido más.</p>
+                <h3 class="text-primary fw-bold">Nuestro Matrimonio</h3>
+                <p class="fs-5">Nunca olvidaré el momento en que nos miramos a los ojos y pronunciamos nuestras promesas. Ese día marcó el inicio de un camino lleno de amor, retos y felicidad compartida.</p>
             </div>
-            <div class="col-md-6">
-                <img src="assets/historia1.jpg" class="img-fluid rounded shadow" alt="El Comienzo">
+            <div class="col-md-6 text-center">
+                <img src="assets/boda2.jpg" class="img-fluid boda-img shadow" alt="Boda">
             </div>
         </div>
     </section>
 
-    <!-- Sección de Momentos Especiales -->
     <section class="container my-5">
-        <h2 class="text-center text-warning">Momentos Especiales</h2>
+        <h3 class="text-center text-danger fw-bold">Nuestros Momentos Especiales</h3>
         <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="assets/momento1.jpg" class="card-img-top" alt="Momento Especial 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Nuestro Primer Encuentro</h5>
-                        <p class="card-text">El primer día que nos conocimos, un instante que nunca olvidaremos.</p>
-                    </div>
-                </div>
+            <div class="col-md-4 text-center">
+                <img src="assets/cita.jpg" class="img-fluid historia-img shadow" alt="Nuestra primera cita">
+                <h5 class="mt-3">Nuestra Primera Cita</h5>
+                <p>Una tarde de risas, nervios y conexión instantánea. Un café, una conversación sin fin y el inicio de algo hermoso.</p>
             </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="assets/momento2.jpg" class="card-img-top" alt="Momento Especial 2">
-                    <div class="card-body">
-                        <h5 class="card-title">Nuestro Primer Viaje</h5>
-                        <p class="card-text">Viajamos juntos, explorando nuevos lugares y creando recuerdos eternos.</p>
-                    </div>
-                </div>
+            <div class="col-md-4 text-center">
+                <img src="assets/viaje.jpg" class="img-fluid historia-img shadow" alt="Viajes juntos">
+                <h5 class="mt-3">Aventuras Inolvidables</h5>
+                <p>Desde montañas hasta playas, cada viaje nos ha regalado historias y momentos de pura felicidad.</p>
             </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="assets/momento3.jpg" class="card-img-top" alt="Momento Especial 3">
-                    <div class="card-body">
-                        <h5 class="card-title">Días de Aventura</h5>
-                        <p class="card-text">Juntos, disfrutando de cada aventura y superando todo tipo de retos.</p>
-                    </div>
-                </div>
+            <div class="col-md-4 text-center">
+                <img src="assets/cocina.jpg" class="img-fluid historia-img shadow" alt="Cocinando juntos">
+                <h5 class="mt-3">Cocinando Juntos</h5>
+                <p>Nuestro equipo en la cocina es imbatible, incluso cuando terminamos riendo entre harinas y recetas improvisadas.</p>
             </div>
         </div>
-    </section>
-
-    <!-- Sección de Nuestro Compromiso -->
-    <section class="container my-5">
-        <h3 class="text-center text-danger fw-bold">Nuestro Compromiso</h3>
-        <p class="fs-5 text-center">El compromiso que hemos formado juntos es más que un lazo, es un pacto de amor eterno y un futuro brillante.</p>
     </section>
 
     <footer class="bg-light text-center py-3">
